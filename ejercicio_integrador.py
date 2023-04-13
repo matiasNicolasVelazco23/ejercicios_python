@@ -6,7 +6,7 @@
 
 miembro_id = [21,42,55,80]
 miembro_nombre= ["Diana", "Ramiro", "Daniel", "Martina"]
-miembro_edad= [19, 18, 27, 21]
+miembro_edad= [19, 18, 15, 21]
 miembro_membresia = ["anual", "mensual", "anual", "mensual"]
 indice=0
 
@@ -77,13 +77,36 @@ while True:
 
     # Opción 5: Calcular el promedio de edad de los miembros
     elif opcion == "5":
+        acumulador_edades = 0
+        for indice in range(len(miembro_id)):
+            print(indice)
+            acumulador_edades+=miembro_edad[indice]
+        indice=indice+1
+        promedio_edades= acumulador_edades / indice
+        print(promedio_edades)
         pass
 
 
     # Opción 6: Buscar el miembro más joven y el más viejo
     elif opcion == "6":
+        flagPrimerJoven = True
+        edad_menor = miembro_edad[0]
+        miembro_edad_menor = miembro_nombre[0]
         for indice in range(len(miembro_id)):
-            print("2")
+            if  miembro_edad[indice] <= edad_menor:
+                edad_menor = miembro_edad[indice]
+                nombre_edad_menor = miembro_nombre[indice]
+        print("El menor es {0}"
+            "y su edad es {1}".format(nombre_edad_menor, edad_menor))
+        flagPrimerviejo = True
+        edad_viejo = miembro_edad[0]
+        miembro_edad_viejo = miembro_nombre[0]
+        for indice in range(len(miembro_id)):
+            if  miembro_edad[indice] >= edad_viejo:
+                edad_viejo = miembro_edad[indice]
+                nombre_edad_viejo = miembro_nombre[indice]
+        print("El menor es {0}"
+            "y su edad es {1}".format(nombre_edad_viejo, edad_viejo))
         pass
 
 
