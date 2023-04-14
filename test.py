@@ -28,17 +28,17 @@
 #     print(i, end='')
 # print()
 
-lista_diccionarios = [    {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"},    {"nombre": "María", "edad": 30, "ciudad": "Barcelona"},    {"nombre": "Pedro", "edad": 35, "ciudad": "Valencia"}]
+# lista_diccionarios = [    {"nombre": "Juan", "edad": 25, "ciudad": "Madrid"},    {"nombre": "María", "edad": 30, "ciudad": "Barcelona"},    {"nombre": "Pedro", "edad": 35, "ciudad": "Valencia"}]
 
-primer_elemento = lista_diccionarios[0]
+# primer_elemento = lista_diccionarios[0]
 
-print(primer_elemento)
+# print(primer_elemento)
 
-nombre = primer_elemento["nombre"]
+# nombre = primer_elemento["nombre"]
 
-print(nombre)
+# print(nombre)
 
-for diccionario in lista_diccionarios:
-    nombre = diccionario["nombre"]
-    edad = diccionario["edad"]
-    print(f"{nombre} tiene {edad} años")
+# for diccionario in lista_diccionarios:
+#     nombre = diccionario["nombre"]
+#     edad = diccionario["edad"]
+#     print(f"{nombre} tiene {edad} años")

@@ -19,6 +19,6 @@ for valor in diccionario_notas:
     contador_notas+=1
 
 promedio_notas = acumulador_notas/contador_notas
-promedio_notas = round(promedio_notas,2)
+promedio_notas = round(promedio_notas,2)   #recorta el promedio a los primeros 2 después de la ,
 
 print(promedio_notas)

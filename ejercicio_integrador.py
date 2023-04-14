@@ -31,7 +31,8 @@ while True:
         miembro_nombre.append(nuevo_miembro)
         nueva_edad = int(input("Ingrese nueva edad: "))
         miembro_edad.append(nueva_edad)
-        nueva_membresia = input("Ingrese tipo de membresia (Anual o Mensual): ")
+        nueva_membresia = input("Ingrese tipo de membresia"
+                                "(Anual o Mensual): ")
         miembro_membresia.append(nueva_membresia)
 
         print(miembro_id, miembro_nombre, miembro_edad, miembro_membresia)
@@ -55,7 +56,9 @@ while True:
             if buscar_id == miembro_id[indice]:
                cambio_de_membresia=input("Ingrese la nueva membresia: ")
                miembro_membresia[indice]=cambio_de_membresia
-               print("Sí, exite, la membresia se actualizó a {0}".format(miembro_membresia[indice]))
+               print("Sí, exite"
+                     ", la membresia se actualizó a {0}"
+                     .format(miembro_membresia[indice]))
                break
                
             else:
@@ -71,7 +74,8 @@ while True:
         ingrese_un_miembro=int(input("Ingrese una id existente"))
         for indice in range(len(miembro_id)):
             if ingrese_un_miembro == miembro_id[indice]:
-                print(miembro_id[indice], miembro_nombre[indice], miembro_edad[indice], miembro_membresia[indice])
+                print(miembro_id[indice], miembro_nombre[indice], 
+                      miembro_edad[indice], miembro_membresia[indice])
         pass
 
 
