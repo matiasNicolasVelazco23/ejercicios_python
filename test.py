@@ -42,3 +42,34 @@
 #     nombre = diccionario["nombre"]
 #     edad = diccionario["edad"]
 #     print(f"{nombre} tiene {edad} años")
+
+#clase contador de algo en un diccionario
+lista_pelicula = [{"Nombre" : "Vover1", "genero": "Drama"},
+{"Nombre" : "Vover2", "genero": "Ficcidjsada"},
+{"Nombre" : "Vover3", "genero": "Drama"},
+{"Nombre" : "Vover4", "genero": "Ficcion"},
+{"Nombre" : "Vover5", "genero": "Drama"}]
+
+def calcular_peliculas_por_genero():
+    diccionarioContadorDePeliculas= {}
+
+    for pelicula in lista_pelicula:
+        texto_genero= pelicula["genero"]
+        if texto_genero in diccionarioContadorDePeliculas:
+            diccionarioContadorDePeliculas[texto_genero]+= 1
+        else:
+            diccionarioContadorDePeliculas[texto_genero]=1
+    return diccionarioContadorDePeliculas
+
+
+    for pelicula in lista_pelicula:
+        texto_genero= pelicula["genero"]
+        if texto_genero in diccionarioContadorDePeliculas:
+            diccionarioContadorDePeliculas[texto_genero]+= 1
+        else:
+            diccionarioContadorDePeliculas[texto_genero]=1
+    return diccionarioContadorDePeliculas
+
+
+contadores = calcular_peliculas_por_genero()
+print(contadores)
