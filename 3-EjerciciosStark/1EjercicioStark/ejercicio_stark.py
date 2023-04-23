@@ -7,7 +7,7 @@ from data_stark import lista_personajes
 def mostrar_superheroes():
     for personaje in lista_personajes:
         print(personaje["nombre"])
-
+    
 def mostrar_nombre_y_altura():
     for personaje in lista_personajes:
         print("El nombre es {0} y la altura es {1}".format(personaje
